@@ -1,8 +1,14 @@
-#TUGAS UTS
-Nama  : Aditya Achya Ananta Nur
-NIM   : 312210714
-Kelas : TI.22.B1
-Matkul : Pemrograman Mobile
-Dosen  : Donny Maulana
+# Tugas UTS 
+Repository ini dibuat untuk memenuhi tugas UTS - Pemrograman Mobile.
 
-#TOAST FIBONACCI APP
+Nama : Aditya Achya Ananta Nur
+
+NIM : 312210714
+
+Kelas : TI.22.B1
+
+Dosen : Donny Maulana
+
+# Toast Fibonacci App
+
+1.
