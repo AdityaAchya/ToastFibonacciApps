@@ -155,7 +155,7 @@ digunakan untuk memanggil hasil hitungan fibonacci
 
 selain 2 code diatas terdapat beberapa code yang saya buat contohnya ada di values seperti berikut
 
-Color
+Colors
 
 '''
 
@@ -174,6 +174,7 @@ Color
 '''
 
 dimens
+
 '''
 
     <resources>
@@ -184,3 +185,33 @@ dimens
 
 '''
 
+ids
+
+'''
+
+    <resources>
+          <item name="editTextTextPersonName" type="id" />
+          <item name="editText" type="id" />
+          <item name="textView" type="id" />
+          <item name="recyclerView" type="id" />
+          <item name="fibonacciRecyclerView" type="id" />
+    </resources>
+
+'''
+
+strings
+
+'''
+
+    <resources>
+          <string name="app_name">ToastFiboApp</string>
+          <string name="btn_label_toast">TOAST</string>
+          <string name="count_initial_value">0</string>
+          <string name="btn_label_count">COUNT</string>
+          <string name="toast_message">"Hello Toast!".</string>
+          <string name="Fibonacci">Fibonacci</string>
+    </resources>
+
+'''
+
+untuk melihat hasil dari Toast Fibonacci ini bisa berkunjung ke laman video berikut :
