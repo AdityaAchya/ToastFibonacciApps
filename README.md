@@ -136,7 +136,8 @@ MainActivity.Java :
 
 Penjelasan
 pada Source Code 
-if (n <= 1) {
+
+    if (n <= 1) {
 
             return n;
         } else {
@@ -151,38 +152,35 @@ if (n <= 1) {
             }
 
 digunakan untuk memanggil hasil hitungan fibonacci
----------------------------------------------------------
+
 selain 2 code diatas terdapat beberapa code yang saya buat contohnya ada di values seperti berikut
 
 Color
 
 '''
 
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="activityBackground">#FFFFFFFF</color>
-    <color name="colorPrimary">#01034f</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="myBackgroundColor">#FFF043</color>
-    <color name="evenColor">#00FFFF</color> <!-- Warna aqua untuk angka genap -->
-    <color name="oddColor">#076101</color>  <!-- Warna hijau untuk angka ganjil -->
-
-</resources>
+    <resources>
+          <color name="black">#FF000000</color>
+          <color name="white">#FFFFFFFF</color>
+          <color name="activityBackground">#FFFFFFFF</color>
+          <color name="colorPrimary">#01034f</color>
+          <color name="colorPrimaryDark">#303F9F</color>
+          <color name="colorAccent">#FF4081</color>
+          <color name="myBackgroundColor">#FFF043</color>
+          <color name="evenColor">#00FFFF</color> <!-- Warna aqua untuk angka genap -->
+          <color name="oddColor">#076101</color>  <!-- Warna hijau untuk angka ganjil -->
+    </resources>
 
 '''
 
 dimens
 '''
 
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="count_text_size">160dp</dimen>
-</resources>
+    <resources>
+        <dimen name="activity_horizontal_margin">16dp</dimen>
+        <dimen name="activity_vertical_margin">16dp</dimen>
+        <dimen name="count_text_size">160dp</dimen>
+    </resources>
 
 '''
 
