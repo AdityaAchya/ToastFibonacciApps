@@ -69,3 +69,71 @@ Dosen : Donny Maulana
         tools:ignore="OnClick" />
 </LinearLayout>
 ```
+
+Penjelasan :
+
+Button pertama berisi tulisan Toast berfungsi agar pengguna tau bahwa aplikasi yang digunakan yaitu aplikasi TOAST
+
+Yang kedua TEXT VIEW yang menampilkan hasil hitungan Fibonacci sesuai dengan beberapa kali kita pencet button ketiga yaitu button COUNT
+
+
+MainActivity.Java :
+
+'''
+public class MainActivity extends AppCompatActivity {
+
+    private Context context;
+    private int mCount = 0;
+    private TextView mShowCount;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mShowCount = (TextView) findViewById(R.id.show_count);
+    }
+
+
+    private int fibonacci( int n){
+
+        if (n <= 1) {
+            return n;
+        } else {
+            int fib1 = 0;
+            int fib2 = 1;
+            int result = 0;
+
+            for (int i = 2; i <= n; i++) {
+                result = fib1 + fib2;
+                fib1 = fib2;
+                fib2 = result;
+            }
+
+            return result;
+        }
+    }
+    public void showToast(View view) {
+        String myString = "Hallo toast";
+        Toast toast = Toast.makeText(getApplicationContext(), myString, Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    public void countUp(View view) {
+        int fibonacciValue = fibonacci(mCount);
+
+        if (mShowCount != null) {
+            mShowCount.setText(Integer.toString(fibonacciValue));
+
+            if (fibonacciValue % 2 == 0) {
+                mShowCount.setTextColor(getResources().getColor(R.color.evenColor));
+            } else {
+                mShowCount.setTextColor(getResources().getColor(R.color.oddColor));
+            }
+        }
+        mCount++;
+    }
+}
+'''
+
+
+
