@@ -80,7 +80,6 @@ Yang kedua TEXT VIEW yang menampilkan hasil hitungan Fibonacci sesuai dengan beb
 MainActivity.Java :
 
 '''
-public class MainActivity extends AppCompatActivity {
 
     private Context context;
     private int mCount = 0;
@@ -132,8 +131,58 @@ public class MainActivity extends AppCompatActivity {
         }
         mCount++;
     }
-}
+    
 '''
 
+Penjelasan
+pada Source Code 
+if (n <= 1) {
 
+            return n;
+        } else {
+            int fib1 = 0;
+            int fib2 = 1;
+            int result = 0;
+
+            for (int i = 2; i <= n; i++) {
+                result = fib1 + fib2;
+                fib1 = fib2;
+                fib2 = result;
+            }
+
+digunakan untuk memanggil hasil hitungan fibonacci
+---------------------------------------------------------
+selain 2 code diatas terdapat beberapa code yang saya buat contohnya ada di values seperti berikut
+
+Color
+
+'''
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="activityBackground">#FFFFFFFF</color>
+    <color name="colorPrimary">#01034f</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="myBackgroundColor">#FFF043</color>
+    <color name="evenColor">#00FFFF</color> <!-- Warna aqua untuk angka genap -->
+    <color name="oddColor">#076101</color>  <!-- Warna hijau untuk angka ganjil -->
+
+</resources>
+
+'''
+
+dimens
+'''
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="count_text_size">160dp</dimen>
+</resources>
+
+'''
 
