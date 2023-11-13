@@ -66,7 +66,7 @@ Dosen : Donny Maulana
             android:layout_gravity="clip_horizontal|center"
             android:layout_marginTop="-40dp"
             android:layout_marginBottom="30dp"
-            android:text="Orta Yamaesa 312210147"
+            android:text="Aditya Achya Ananta Nur 312210714"
             android:textAlignment="center"
             android:textSize="24sp" />
 
